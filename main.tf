@@ -6,9 +6,9 @@ terraform {
     }
   }
 }
-variable "SPLUNK_PASSWORD"
-variable "SPLUNK_USERNAME"
-variable "SPLUNK_URL"
+variable "SPLUNK_PASSWORD" {type = "string"}
+variable "SPLUNK_USERNAME" {type = "string"}
+variable "SPLUNK_URL" {type = "string"}
 
 
 provider "splunk" {
