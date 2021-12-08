@@ -55,5 +55,7 @@ resource "splunk_data_ui_views" "tf_cloud_dashboard" {
   }
 }
 
-
+output url {
+  value = var.SPLUNK_URL
+}
 
