@@ -6,8 +6,15 @@ terraform {
     }
   }
 }
+variable "SPLUNK_PASSWORD"
+variable "SPLUNK_USERNAME"
+variable "SPLUNK_URL"
+
 
 provider "splunk" {
+url = var.SPLUNK_URL
+username = var.SPLUNK_USERNAME
+password = var.SPLUNK_URL
 }
 
 resource "splunk_data_ui_views" "tf_cloud_dashboard" {
